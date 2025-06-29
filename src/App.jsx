@@ -38,7 +38,7 @@ export default function App() {
   const onSubmit = async (data) => {
     setMessage("");
     try {
-      await axios.post("http://localhost:3000/participants", data);
+      await axios.post("https://technical-team-02-back.onrender.com/participants", data);
       setMessage("✅ Registered successfully!");
       reset();
     } catch (error) {
